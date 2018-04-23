@@ -194,6 +194,18 @@ header.masthead h2 {
   }
 }
 
+#draggable {
+  padding: 0.5em;
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+
+#droppable {
+  padding: 0.2em;
+  float: left;
+  margin: 10px;
+}
+
 .portfolio {
   margin-bottom: -15px;
 }
