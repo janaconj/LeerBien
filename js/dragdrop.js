@@ -1,16 +1,39 @@
 $(function() {
-        $("#draggable").draggable({
-          start: function() {
-            //$("#audio-drag")[0].play();
-          }
-        });
-        $("#droppable").droppable({
-          drop: function(event, ui) {
-            $("#audio-drop")[0].play();
-            $(this)
-              .addClass("ui-state-highlight")
-              .find("p")
-              .html("Dropped!");
-          }
-        });
+    
+    $("#draggable2").hide();
+    $("#draggable3").hide();
+    $("#draggable4").hide();  
+    
+    $("#draggable1").draggable({start: function(){}});
+    $("#draggable2").draggable({start: function(){}});
+    $("#draggable3").draggable({start: function(){}});
+    $("#draggable4").draggable({start: function(){}});
+    
+    $("#droppable1").droppable({
+        drop: function(event, ui) {
+            $("#audio-drop1")[0].play();
+            $("#draggable2").show();
+        }
+    });
+    
+    $("#droppable2").droppable({
+        drop: function(event, ui) {
+            $("#audio-drop2")[0].play();
+            $("#draggable3").show();
+        }
+    });
+    
+    $("#droppable3").droppable({
+        drop: function(event, ui) {
+            $("#audio-drop3")[0].play();
+            $("#draggable4").show();
+        }
+    });
+    
+    $("#droppable4").droppable({
+        drop: function(event, ui) {
+            $("#audio-drop4")[0].play();
+        }
+    });
+    
 });
