@@ -1,5 +1,4 @@
 $(function() {
-    //var b = 0;
     $("#done1").hide();
     $("#done2").hide();
     $("#done3").hide();
@@ -9,10 +8,10 @@ $(function() {
     $("#draggable3").hide();
     $("#draggable4").hide();  
     
-    $("#draggable1").draggable({helper: 'clone'});
-    $("#draggable2").draggable({helper: 'clone'});
-    $("#draggable3").draggable({helper: 'clone'});
-    $("#draggable4").draggable({helper: 'clone'});
+    $("#draggable1").draggable({start: function(){}}, {helper: 'clone'});
+    $("#draggable2").draggable({start: function(){}}, {helper: 'clone'});
+    $("#draggable3").draggable({start: function(){}}, {helper: 'clone'});
+    $("#draggable4").draggable({start: function(){}}, {helper: 'clone'});
     
     $("#droppable1").droppable({
         drop: function(event, ui) {
